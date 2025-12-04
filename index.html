@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Development System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">VDS</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#profile">Village Profile</a></li>
+                <li><a href="#grievance">Submit Grievance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="hero-section">
+            <h2>🏡 Welcome to Our Village Development Portal</h2>
+            <p>Access key village data and stay updated on development projects</p>
+            <div class="data-cards-container">
+                <div class="data-card">
+                    <h3>Population</h3>
+                    <p>4,500</p>
+                </div>
+                <div class="data-card">
+                    <h3>Literacy Rate</h3>
+                    <p>85%</p>
+                </div>
+                <div class="data-card">
+                    <h3>Current Projects</h3>
+                    <p>Road Construction, Water Tank Installation</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="grievance" class="form-section">
+            <h2>✍️ Submit a Grievance or Feedback</h2>
+            <form id="grievance-form">
+                <div class="form-group">
+                    <label for="name">Your Name (Optional)</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="topic">Topic of Grievance/Feedback <span class="required">*</span></label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Select Topic</option>
+                        <option value="Roads">Roads & Infrastructure</option>
+                        <option value="Water">Water Supply</option>
+                        <option value="Electricity">Electricity</option>
+                        <option value="Sanitation">Sanitation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="details">Details <span class="required">*</span></label>
+                    <textarea id="details" name="details" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="submission-message" style="display: none; color: green; margin-top: 15px;">Thank you for your submission! We will look into it.</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 Village Development System. Contact us at info@village.org</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
